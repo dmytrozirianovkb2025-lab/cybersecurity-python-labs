@@ -9,7 +9,7 @@ from shared.student import GROUP_NAME, STUDENT_NAME, VARIANT_NUMBER
 print(f"Лабораторна робота №1  Виконав: {STUDENT_NAME}, група {GROUP_NAME}")
 print(f"Варіант №{VARIANT_NUMBER}\n")
 
-from labs.lab01 import  task1, task2, task3
+from labs.lab01 import task1, task2, task3
 
 def main() -> None:
     print(f"Лабораторна робота №1  Виконав: {STUDENT_NAME}, група {GROUP_NAME}")
@@ -27,7 +27,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-
-

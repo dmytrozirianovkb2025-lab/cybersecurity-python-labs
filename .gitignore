@@ -219,3 +219,8 @@ __marimo__/
 
 data/
 data.json
+
+export.json
+app.log
+clean.txt
+scan_report.json
