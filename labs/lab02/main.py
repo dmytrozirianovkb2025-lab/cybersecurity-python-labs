@@ -86,4 +86,6 @@ if __name__ == "__main__":
         run_demo()
     else:
 
-        print("python3 -m labs.lab02.main demo")
+        print("python3 -m labs.lab02.main demo task1")
+print("Для запуску task2 потрібно ввести команду=")
+print("python labs/lab02/task2.py --scan-dir labs/lab02/data_v13 --patterns all --mask --out-json labs/lab02/scan_report.json")

@@ -34,8 +34,9 @@ class User:
         self._password_hash = hashlib.pbkdf2_hmac(
             "sha256",
             password.encode("utf-8"),
-            PBKDF2_ITERATIONS,
             self._password_salt,
+            PBKDF2_ITERATIONS,
+
 
         )
 
