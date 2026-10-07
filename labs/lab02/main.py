@@ -6,11 +6,13 @@ import time
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
 from labs.lab02.task1 import Admin, AuditLog, User, UserAccount
+from labs.lab02.task2 import main as run_task2
 
 
 def run_demo() -> None:
     print("lab02")
     audit_log = AuditLog()
+
 
 
     print(" 1. Аутентифікація (Успішний та невдалий вхід)")
@@ -84,8 +86,11 @@ if __name__ == "__main__":
 
     if len(sys.argv) > 1 and sys.argv[1] == "demo":
         run_demo()
+    elif len(sys.argv) > 1 and sys.argv[1] == "scan":
+
+        sys.argv = [sys.argv[0]] + sys.argv[2:]
+        run_task2()
     else:
 
         print("python3 -m labs.lab02.main demo task1")
-print("Для запуску task2 потрібно ввести команду=")
-print("python labs/lab02/task2.py --scan-dir labs/lab02/data_v13 --patterns all --mask --out-json labs/lab02/scan_report.json")
+        print("  python -m labs.lab02.main scan --scan-dir labs/lab02/data_v13 --mask # Запуск Task 2")
