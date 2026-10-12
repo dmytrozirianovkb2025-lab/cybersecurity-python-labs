@@ -41,6 +41,17 @@ python -m labs.lab02.main demo
 
 * **Звітність:** Генерація підсумкового JSON-звіту та логування попереджень.
 
+
+## Пояснення 
+
+* **--scan-dir**  = Директорія для рекурсивного сканування
+
+* **--patterns** = Типи даних для пошуку(all", "cards", "emails)
+
+* **--mask**   = Прапорець для маскування знайдених PII
+
+* **--out-json**  = Шлях до файлу підсумкового JSON-звіту
+
 Відкрийте термінал у кореневій папці проєкту та виконайте команду:
 ```bash
 python labs/lab02/task2.py --scan-dir labs/lab02/data_v13 --patterns all --mask --out-json labs/lab02/scan_report.json
